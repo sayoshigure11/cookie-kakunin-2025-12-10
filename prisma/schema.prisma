@@ -18,7 +18,7 @@ model Track {
   id        String   @id @default(cuid())
   uid       String
   eventType String
-  payload   String?
+  payload   Json?
   createdAt DateTime @default(now())
 }
 
